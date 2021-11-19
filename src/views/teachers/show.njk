@@ -1,0 +1,55 @@
+{% extends 'layout.njk' %}
+{% block title %}
+  <title>Blackwell Academy - {{teacher.name}}</title>
+{% endblock title %}
+{% block content %}
+  <section id="cadastro">
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="{{teacher.avatar_url}}" alt="">
+        </div>
+        <div class="info">
+          <h3>Professor</h3>
+          <div class="item">
+            <div>Nome</div>
+            <div>{{teacher.name}}</div>
+          </div>
+          <div class="item">
+            <div>Idade</div>
+            <div>{{teacher.age}} anos</div>
+          </div>
+          <div class="item">
+            <div>Grau de escolaridade</div>
+            <div>{{teacher.schooling}}</div>
+          </div>
+          <div class="item">
+            <div>Tipo de aula</div>
+            <div>{{teacher.class_type}}</div>
+          </div>
+          <div class="item areas">
+            <div>Acompanhamento</div>
+            {% for area in teacher.areas %}
+            <span>{{area}}</span>
+            {% endfor %}
+          </div>
+          <div class="item">
+            <div>Desde</div>
+            <div>{{teacher.created_at}}</div>
+          </div>
+
+
+          <a href="/teachers/{{teacher.id}}/edit" class="edit">Editar</a>
+
+              <form action="/teachers?_method=DELETE" method="POST">
+                   <input type="hidden" name="id" value="{{teacher.id}}">
+                   <button onclick="return confirm('Tem certeza que deseja deletar? ');" type="submit" class="delete">Deletar</button> 
+              </form>
+   
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

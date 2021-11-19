@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+{% block title %}
+    <title>{{ course.title }}</title>
+{% endblock title %}
+{% block content %}
+    <section id="description">
+        <div class="container">
+            <div class="main-info">
+                <img src="{{ course.image_url }}" alt=""/>
+                <h1>{{ course.title }}</h1>
+                <h2>por {{course.teacher}}</h2>
+                <h2>{{course.time}} anos</h2>
+            </div>
+            <div class="other-info">
+                <div class="description">
+                    <p>
+                    {{course.description}}
+                    </p>
+                </div>
+            </div>
+        </section>
+    {% endblock content %}

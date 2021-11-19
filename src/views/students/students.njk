@@ -1,0 +1,41 @@
+{% extends 'layout.njk' %}
+{% block title %}
+  <title>Blackwell Academy - Professores</title>
+{% endblock title %}
+{% block content %}
+  <section id="cadastro">
+    <div class="container">
+      <div class="create"><a href="/students/create">+</a></div>
+      <div class="table-wrapper">
+        <table class="fl-table">
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Email</th>
+              <th>Ano escolar</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for student in students %}
+              <tr>
+                <td class="table-avatar">
+                  <img src="{{ student.avatar_url }}" alt="">
+                    <p>{{ student.name }}</p>
+                  </td>
+                  <td>
+                    <span>{{ student.email }}</span>
+                  </td>
+                  <td>
+                    <span>{{student.academic_year}}</span>
+                  </td>
+                  <td>
+                    <a href="/students/{{ student.id }}">Detalhes</a>
+                  </td>
+                {% endfor %}
+              </tr>
+              <tbody></table>
+            </div>
+          </div>
+        </section>
+      {% endblock content %}

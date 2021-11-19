@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+{% block title %}
+    <title>Blackwell Academy - {{teacher.name}}</title>
+{% endblock title %}
+{% block content %}
+    <section id="cadastro">
+        <div class="container">
+            <form action="/teachers?_method=PUT" method="POST">
+                <div class="card">
+                    <div class="image">
+                        <img src="{{teacher.avatar_url}}" alt=""></div>
+                        <div class="info">
+                            <h3>Editar Professor</h3>
+                            {%include 'teachers/fields.njk'%}
+
+                            <input type="hidden" name="id" value="{{teacher.id}}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    {% endblock content %}

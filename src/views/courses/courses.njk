@@ -1,0 +1,29 @@
+{% extends 'layout.njk' %}
+{% block title %}
+  <title>Blackwell Academy - Cursos</title>
+{% endblock title %}
+{% block content %}
+  <section id="content">
+    <div class="container">
+      <div class="cards">
+        {% for course in courses %}
+          <a href="/courses/{{course.id}}">
+            <div class="card" id="{{ course.image_url }}">
+              <img src="{{ course.image_url }}" alt=""/>
+              <div class="info">
+                <h3>{{ course.title }}</h3>
+                <p>por
+                  {{ course.teacher }}</p>
+                <p>{{ course.time }}
+                  anos</p>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock content %}
+{% block scripts %}
+  <script src="/scripts/script.js"></script>
+{% endblock scripts %}

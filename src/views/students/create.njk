@@ -1,0 +1,20 @@
+{% extends 'layout.njk' %}
+{% block title %}
+    <title>Blackwell Academy - Cadastrar</title>
+{% endblock title %}
+{% block content %}
+    <section id="cadastro">
+        <div class="container">
+            <form action="/students" method="POST">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://source.unsplash.com/random" alt=""></div>
+                        <div class="info">
+                            <h3>Novo Aluno</h3>
+                            {%include 'students/fields.njk'%}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    {% endblock content %}

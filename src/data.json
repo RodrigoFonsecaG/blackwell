@@ -1,0 +1,104 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "image_url": "https://cdnb.artstation.com/p/assets/images/images/011/506/503/large/valeriu-mihai-carmaliga-lis-classroom-s04.jpg?1529941921&dl=1",
+      "title": "Arte/Fotografia",
+      "teacher": "Mark Jefferson",
+      "time": "2",
+      "description": "O laboratório de fotografia , também conhecido como sala de aula de arte , é um dos quatro laboratórios principais da Blackwell Academy . O Sr. Jefferson dá suas palestras nesta sala, incluindo um curso chamado 'A Linguagem da Fotografia'. É bem equipado com equipamentos de fotografia e literatura de alta tecnologia."
+    },
+    {
+      "id": 2,
+      "image_url": "https://cdna.artstation.com/p/assets/images/images/001/899/922/large/gary-jamroz-palma-science-class-1920.jpg?1454427502",
+      "title": "Ciências",
+      "teacher": "Michelle Grant",
+      "time": "4",
+      "description": "O Laboratório de Ciências , também conhecido como Sala de Aula de Ciências , é um dos quatro laboratórios principais da Blackwell Academy. Está equipado com produtos químicos e equipamentos de biologia. Michelle Grant ensina ciências aos alunos de Blackwell neste laboratório."
+    },
+    {
+      "id": 3,
+      "image_url": "https://cdnb.artstation.com/p/assets/images/images/010/894/671/large/cosmin-panfil-unreal-engine-demo-super-resolution-2018-05-20-14-19-22-88.jpg?1526816138",
+      "title": "Futebol Americano",
+      "teacher": "J. Edwards",
+      "time": "3",
+      "description": "Os Bigfoots da Blackwell são a equipe de futebol americano da Academia Blackwell. O nome do time pode ter sido baseado nos rumores de que ha um pé grande vivendo nas florestas de Arcadia Bay."
+    },
+    {
+      "id": 4,
+      "image_url": "https://cdna.artstation.com/p/assets/images/images/001/863/120/medium/gary-jamroz-palma-pool-bassin-artstation.jpg?1453897231",
+      "title": "Natação",
+      "teacher": "Michelle Barenchi",
+      "time": "2",
+      "description": "As lontras são a equipe de natação da Blackwell Academy. Eles treinam dentro da piscina Blackwell, seus times rivais são The Sharks e The Beavers. Em 2012, eles foram a melhor equipe de natação de Blackwell."
+    },
+    {
+      "id": 5,
+      "image_url": "https://cdna.artstation.com/p/assets/images/images/011/506/492/large/valeriu-mihai-carmaliga-lis-classroom-s01.jpg?1529941899&dl=1",
+      "title": "Inglês/Literatura",
+      "teacher": "Bernadette Hoida ",
+      "time": "4",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+    },
+    {
+      "id": 6,
+      "image_url": "https://pm1.narvii.com/6921/33e016093141212e905f9160785d13a0b6397f7cr1-1920-1080v2_hq.jpg",
+      "title": "Teatro",
+      "teacher": "Travis Keaton",
+      "time": "3",
+      "description": "O Laboratório de Drama está localizado no andar térreo da Blackwell Academy, ao lado do Laboratório de Fotografia . Consiste em uma sala maior atuando como uma sala de palco e a área dos bastidores."
+    }
+  ],
+  "teachers": [
+    {
+      "id": 3,
+      "name": "Mark Jefferson",
+      "avatar_url": "http://pm1.narvii.com/6544/a08e3678d38b4adc17e32947d2f2e4651d7be191_00.jpg",
+      "birth": 166406400000,
+      "created_at": 1637156906720,
+      "schooling": "Mestrado",
+      "class_type": "Presencial",
+      "areas": "Fotografia"
+    },
+    {
+      "id": 4,
+      "name": "Michelle Grant",
+      "avatar_url": "https://assets.mycast.io/characters/michelle-grant-392134-normal.jpg?1576064731",
+      "birth": -92016000000,
+      "created_at": 1637157240389,
+      "schooling": "Doutorado",
+      "class_type": "Presencial",
+      "areas": "Matemática, ciências"
+    },
+    {
+      "id": 5,
+      "name": "Travis Keaton",
+      "avatar_url": "https://assets.mycast.io/characters/travis-keaton-392138-normal.jpg?1576138824",
+      "birth": -298771200000,
+      "created_at": 1637157363214,
+      "schooling": "Mestrado",
+      "class_type": "Presencial",
+      "areas": "Teatro"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Maxine Caulfield",
+      "email": "maxcaufield@gmail.com",
+      "avatar_url": "https://store-images.s-microsoft.com/image/apps.21284.13858225632802857.a1c4ff2d-9f01-470e-8ad5-56304cf6acd9.9ec5382f-b1d4-44f0-b298-0dbdac280605?mode=scale&q=90&h=1080&w=1920",
+      "birth": 811641600000,
+      "academic_load": "45",
+      "academic_year": "2EM"
+    },
+    {
+      "id": 2,
+      "name": "Chloe Elizabeth Price",
+      "email": "chloeprice@gmail.com",
+      "avatar_url": "https://s.yimg.com/os/creatr-uploaded-images/2021-08/d2f18b90-fad7-11eb-b7dc-ec678b4578ce",
+      "birth": 763344000000,
+      "academic_load": "30",
+      "academic_year": "3EM"
+    }
+  ]
+}
