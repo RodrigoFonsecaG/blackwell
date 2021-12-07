@@ -21,7 +21,7 @@
           </div>
           <div class="item">
             <div>Grau de escolaridade</div>
-            <div>{{teacher.schooling}}</div>
+            <div>{{teacher.education_level}}</div>
           </div>
           <div class="item">
             <div>Tipo de aula</div>
@@ -29,9 +29,9 @@
           </div>
           <div class="item areas">
             <div>Acompanhamento</div>
-            {% for area in teacher.areas %}
-            <span>{{area}}</span>
-            {% endfor %}
+                {% for subject in teacher.subjects_taught.split(",") %}
+                    <span>{{ subject }}</span>
+                  {% endfor %}
           </div>
           <div class="item">
             <div>Desde</div>

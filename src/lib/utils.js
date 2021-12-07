@@ -25,7 +25,8 @@ module.exports = {
 
     return {
       iso: `${year}-${zeroDate(month)}-${zeroDate(day)}`,
-      birthday: `${zeroDate(day)}/${zeroDate(month)}`
+      birthday: `${zeroDate(day)}/${zeroDate(month)}`,
+      format: `${zeroDate(day)}/${zeroDate(month)}/${year}`
     };
   },
 

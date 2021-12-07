@@ -16,7 +16,7 @@ server.use(function(req, res) {
     res.status(404).render("not-found.njk");
 });
 
-nunjucks.configure("src/views", {
+nunjucks.configure("src/app/views", {
     express:server,
     noCache: true
 })

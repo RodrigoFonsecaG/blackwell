@@ -5,8 +5,9 @@
 {% block content %}
   <section id="cadastro">
     <div class="container">
-      <div class="create"><a href="/students/create">+</a></div>
+      <div class="create"><a href="/students/create">Novo</a></div>
       <div class="table-wrapper">
+        
         <table class="fl-table">
           <thead>
             <tr>
@@ -38,4 +39,7 @@
             </div>
           </div>
         </section>
+      
+      <div class="pagination" data-total={{pagination.total()}} data-page={{ pagination.page}} data-filter={{ filter}}></div>
+      
       {% endblock content %}

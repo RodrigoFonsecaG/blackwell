@@ -39,7 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-section{
+section {
   margin-bottom: 4rem;
 }
 
@@ -87,8 +87,8 @@ section{
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.links a.active{
-  font-weight:bold;
+.links a.active {
+  font-weight: bold;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -274,7 +274,6 @@ section{
   margin-top: 4rem;
 }
 
-
 #cadastro .card {
   margin: 0 auto;
   background-color: var(--header-color);
@@ -283,50 +282,49 @@ section{
   display: grid;
   grid-template-columns: 40% 60%;
 
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#cadastro .card .image img{
+#cadastro .card .image img {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   height: 100%;
   object-fit: cover;
 }
 
-#cadastro .card .info{
+#cadastro .card .info {
   padding: 2rem;
 }
 
-#cadastro .card .info .item{
+#cadastro .card .info .item {
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--text-color);
 }
 
-
-#cadastro .card .info .item:last-child{
+#cadastro .card .info .item:last-child {
   border-bottom: none;
 }
 
-#cadastro .card .info .item div{
+#cadastro .card .info .item div {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-#cadastro .card .info .item div:first-child{
+#cadastro .card .info .item div:first-child {
   color: var(--body-color);
 }
 
-#cadastro .card .info .item div:nth-child(2){
+#cadastro .card .info .item div:nth-child(2) {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-#cadastro .card .info h3{
+#cadastro .card .info h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-#cadastro .areas span{
+#cadastro .areas span {
   margin-bottom: 1rem;
   font-size: 1rem;
   display: inline-block;
@@ -339,31 +337,30 @@ section{
 }
 
 #cadastro a {
-background-color: var(--body-color);
-width: 100%;
-display: block;
-text-align: center;
-padding: 1rem;
-font-weight: bold;
-text-transform: uppercase;
-border-radius: 6px;
+  background-color: var(--body-color);
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
 }
-
 
 /*===FORMULARIO===*/
 
-form input,select {
+form input,
+select {
   width: 100%;
   outline: none;
   color: var(--text-color);
   font-weight: bold;
   font-size: 18px;
   background: none;
-  border:none;
+  border: none;
 
   margin-bottom: 1rem;
 }
-
 
 form input[type='radio'] {
   width: initial;
@@ -375,11 +372,11 @@ form input[type='radio'] {
   margin-top: 12px;
 }
 
-form span{
+form span {
   margin-right: 1rem;
 }
 
-button{
+button {
   border: none;
   display: block;
   background: var(--text-color);
@@ -391,34 +388,32 @@ button{
   text-transform: uppercase;
 }
 
-.delete{
+.delete {
   margin-top: 1rem;
   cursor: pointer;
 }
 
-#cadastro .create{
-  width: 100%;
-  text-align: center;
+#cadastro .create a{
+  margin: 0 auto;
 }
 
-#cadastro .create a{
+#cadastro .header .create, #cadastro .create a{
   background-color: var(--text-color);
   color: var(--body-color);
-  padding: 0.1rem;
+  padding: 0.5rem;
   border-radius: 6px;
   cursor: pointer;
-  width: 5%;
-  margin: 0 auto;
+  width: 60px;
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
 }
-
 
 /*======TABLE=======*/
 
-.table-wrapper{
+.table-wrapper {
   margin: 10px 70px 70px;
-  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
 }
 
 .fl-table {
@@ -433,7 +428,8 @@ button{
   background-color: white;
 }
 
-.fl-table td, .fl-table th {
+.fl-table td,
+.fl-table th {
   text-align: center;
   padding: 8px;
 }
@@ -448,17 +444,16 @@ button{
   background: var(--title-color);
 }
 
-
 .fl-table thead th:nth-child(odd) {
   color: #ffffff;
   background: var(--header-color);
 }
 
 .fl-table tr:nth-child(even) {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
-.table-wrapper span{
+.table-wrapper span {
   margin-bottom: 1rem;
   margin-right: 1rem;
   background-color: var(--body-color);
@@ -468,88 +463,155 @@ button{
   font-weight: bold;
 }
 
-.table-wrapper .fl-table a{
+.table-wrapper .fl-table a {
   background-color: var(--text-color) !important;
   color: white;
 }
 
-.table-avatar{
+.table-avatar {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.table-avatar img{
+.table-avatar img {
   width: 40px;
   height: 40px;
   clip-path: circle();
-  object-fit:cover;
+  object-fit: cover;
   margin-right: 1rem;
 }
+
+#cadastro .header{
+display: flex;
+justify-content: space-around;
+margin: 0 auto;
+}
+
+#cadastro .header form{
+  display: flex;
+}
+
+#cadastro .header input {
+  background-color: var(--text-color);
+    color: var(--body-color);
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+    flex: 2;
+    height: 35px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#cadastro .header form button {
+  flex: 1;
+  height: 35px;
+  text-align: center;
+  padding: 0;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.pagination{
+  width: 100%;
+  text-align: center;
+}
+
+.pagination a {
+  margin-right: 2rem;
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.pagination a:hover{
+  color: var(--header-color);
+  border: 1px solid var(--header-color);
+}
+
+.pagination span{
+  margin-right: 1.5rem;
+}
+
+.pagination a.active{
+  border: 2px solid var(--text-color);
+  font-weight: bold;
+}
+
 
 /* Responsive */
 
 @media (max-width: 767px) {
   .fl-table {
-      display: block;
-      width: 100%;
+    display: block;
+    width: 100%;
   }
-  .table-wrapper:before{
-      content: "Scroll horizontally >";
-      display: block;
-      text-align: right;
-      font-size: 11px;
-      color: white;
-      padding: 0 0 10px;
+  .table-wrapper:before {
+    content: 'Scroll horizontally >';
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
   }
-  .fl-table thead, .fl-table tbody, .fl-table thead th {
-      display: block;
+  .fl-table thead,
+  .fl-table tbody,
+  .fl-table thead th {
+    display: block;
   }
-  .fl-table thead th:last-child{
-      border-bottom: none;
+  .fl-table thead th:last-child {
+    border-bottom: none;
   }
   .fl-table thead {
-      float: left;
+    float: left;
   }
   .fl-table tbody {
-      width: auto;
-      position: relative;
-      overflow-x: auto;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
   }
-  .fl-table td, .fl-table th {
-      padding: 20px .625em .625em .625em;
-      height: 60px;
-      vertical-align: middle;
-      box-sizing: border-box;
-      overflow-x: hidden;
-      overflow-y: auto;
-      width: 120px;
-      font-size: 13px;
-      text-overflow: ellipsis;
+  .fl-table td,
+  .fl-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
   }
   .fl-table thead th {
-      text-align: left;
-      border-bottom: 1px solid #f7f7f9;
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
   }
   .fl-table tbody tr {
-      display: table-cell;
+    display: table-cell;
   }
   .fl-table tbody tr:nth-child(odd) {
-      background: none;
+    background: none;
   }
   .fl-table tr:nth-child(even) {
-      background: transparent;
+    background: transparent;
   }
   .fl-table tr td:nth-child(odd) {
-      background: #F8F8F8;
-      border-right: 1px solid #E6E4E4;
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
   }
   .fl-table tr td:nth-child(even) {
-      border-right: 1px solid #E6E4E4;
+    border-right: 1px solid #e6e4e4;
   }
   .fl-table tbody td {
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
 }
-

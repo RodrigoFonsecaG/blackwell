@@ -30,11 +30,15 @@
             </div>
             <div class="item">
               <div>Ano escolar</div>
-              <div>{{ student.grade }}</div>
+              <div>{{ student.academic_year }}</div>
             </div>
             <div class="item">
               <div>Carga horária semanal</div>
               <div>{{ student.academic_load }} hrs</div>
+            </div>
+                        <div class="item">
+              <div>Professor</div>
+              <div>{{ student.teacher_name }}</div>
             </div>
             <a href="/students/{{ student.id }}/edit" class="edit">Editar</a>
             <form action="/students?_method=DELETE" method="POST">

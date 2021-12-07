@@ -5,7 +5,14 @@
 {% block content %}
   <section id="cadastro">
     <div class="container">
-      <div class="create"><a href="/teachers/create">+</a></div>
+      <div class="header">
+        <a href="/teachers/create" class="create">Novo</a>
+
+        <form method="get" action="/teachers">
+            <input type="text" id="filter" name="filter" placeholder="Filtrar por nome" value = {{filter}}>
+            <button type="submit">Filtrar</button>
+        </form>
+      </div>
       <div class="table-wrapper">
         <table class="fl-table">
           <thead>
@@ -23,8 +30,8 @@
                   <p>{{ teacher.name }}</p>
                   </td>
                 <td>
-                  {% for area in teacher.areas.split(",") %}
-                    <span>{{ area }}</span>
+                  {% for subject in teacher.subjects_taught.split(",") %}
+                    <span>{{ subject }}</span>
                   {% endfor %}
                 </td>
                 <td>
@@ -36,4 +43,6 @@
           </div>
         </div>
       </section>
+
+      <div class="pagination" data-total={{pagination.total()}} data-page={{ pagination.page}} data-filter={{ filter}}></div>
     {% endblock content %}

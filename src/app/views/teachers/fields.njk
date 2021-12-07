@@ -6,21 +6,21 @@
         <input type="text" name="name" id="name" value="{{teacher.name}}" required></div>
         <div class="item">
             <div>Data de nascimento</div>
-            <input type="date" name="birth" id="birth" value="{{teacher.birth}}" required></div>
+            <input type="date" name="birth_date" id="birth_date" value="{{teacher.birth_date}}" required></div>
             <div class="item">
                 <div>Grau de escolaridade</div>
-                <select name="schooling" id="schooling" required>
-                    <option value="Ensino Médio Completo" {% if teacher.schooling == "Ensino Médio Completo" %}
+                <select name="education_level" id="education_level" required>
+                    <option value="Ensino Médio Completo" {% if teacher.education_level == "Ensino Médio Completo" %}
                         selected
                         {% endif %}>Ensino Médio Completo</option>
-                    <option value="Ensino Superior Completo" {% if teacher.schooling == "Ensino Superior Completo" %}
+                    <option value="Ensino Superior Completo" {% if teacher.education_level == "Ensino Superior Completo" %}
                         selected
                         {% endif %}>
                         Ensino Superior Completo</option>
-                    <option value="Mestrado" {% if teacher.schooling == "Mestrado" %}
+                    <option value="Mestrado" {% if teacher.education_level == "Mestrado" %}
                         selected
                         {% endif %}>Mestrado</option>
-                    <option value="Doutorado" {% if teacher.schooling == "Doutorado" %}
+                    <option value="Doutorado" {% if teacher.education_level == "Doutorado" %}
                         selected
                         {% endif %}>Doutorado</option>
                 </select>
@@ -40,6 +40,6 @@
                 </div>
                     <div class="item">
         <div>Área de atuação (Separe por virgula)</div>
-        <input type="text" name="areas" id="areas" value="{{teacher.areas}}" required></div>
+        <input type="text" name="subjects_taught" id="subjects_taught" value="{{teacher.subjects_taught}}" required></div>
         <button type="submit">Salvar</button>
                 
