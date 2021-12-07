@@ -41,6 +41,18 @@
 - **Express**
 - **Nunjucks**
 - **Method override**
+- **PostgreSQL/Postbird**
+
+---------
+    
+    
+----------
+
+
+##  🚧 Ainda serão adicionados:
+
+- **Responsividade**
+- **Novo layout**
 
 ---------
 
